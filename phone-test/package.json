@@ -32,7 +32,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "test:e2e": "playwright test ./e2e.spec.ts",
+    "setup:pw":"yarn playwright install",
+    "test:e2e": "yarn setup:pw && playwright test ./e2e.spec.ts",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
